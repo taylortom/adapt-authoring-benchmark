@@ -8,6 +8,7 @@
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core.git"
   },
   "dependencies": {
-    "artillery": "1.6.0-29"
+    "artillery": "1.6.0-29",
+    "fs-extra": "8.1.0"
   }
 }

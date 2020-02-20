@@ -38,7 +38,7 @@ async function runTests() {
 
 async function runTest(mod) {
   const configPath = `${rootDir}/artillery.yml`;
-  const scriptPath = `${mod.rootDir}/artillery.json`;
+  const scriptPath = `${mod.rootDir}/artillery.yml`;
   const outputPath = `${tempDir}/${mod.name}.json`;
   const cmd = `${artilleryBin} run --config ${configPath} --output ${outputPath} -q ${scriptPath}`;
   try {

@@ -52,10 +52,12 @@ async function runTest(mod) {
   return new Promise((resolve, reject) => {
     exec(cmd, async (error, stdout, stderr) => {
       if(error) {
+        error.module = mod.name;
         reject(error);
         return;
       }
       if(stderr) {
+        error.module = mod.name;
         reject(stderr);
         return;
       }

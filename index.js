@@ -11,7 +11,6 @@ const app = App.instance;
 
 let artilleryBin;
 let tempDir;
-let outputDir;
 let rootDir;
 
 async function benchmark() {

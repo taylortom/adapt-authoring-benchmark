@@ -59,7 +59,7 @@ async function runTest(mod) {
         reject(stderr);
         return;
       }
-      resolve({ module: mod.name, ...(await fs.readJson(outputPath)) });
+      resolve({ module: mod.name, ...await fs.readJson(outputPath) });
     });
   });
 }

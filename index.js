@@ -2,7 +2,6 @@ const { App } = require('adapt-authoring-core');
 const chalk = require('chalk');
 const exec = require('child_process').exec;
 const fs = require('fs-extra');
-const path = require('path');
 
 const Errors = {
   ENOTESTS: 'ENOTESTS'

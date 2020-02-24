@@ -99,7 +99,7 @@ function logSep(s = '-') {
   console.log(s.repeat(80));
 }
 
-function sortByStatus(a, b) {
+function sortByStatus(a) {
   if(a.status === 'rejected') return -1;
 }
 
